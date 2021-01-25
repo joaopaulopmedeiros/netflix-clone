@@ -161,6 +161,7 @@ header .options .profile {
 
 .catalog-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .catalog-item {
@@ -262,4 +263,30 @@ header .options .profile {
   .catalog {
     margin-top: 10vh;
   }
+}
+
+@media (max-width: 1200px) {
+    #app > header {
+        height: 70vh;
+    }
+
+    .banner-title img {
+        width: 40%;
+    }
+
+    .banner-btn {
+        margin: 0 auto;
+        width: 50%;
+        justify-content: center;
+    }
+
+    #app main {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    #app main {
+        margin-top: 10px;
+    }
 }
