@@ -1,114 +1,265 @@
 @import "reboot.css";
 @import "layout.css";
 
+#app > header {
+  width: 100%;
+  height: 100vh !important;
+  background: url(../img/catalogs/bg.webp);
+  background-position: center center;
+  background-size: cover;
+}
 
-header {
-    display: flex; 
-    align-items: center;
+header .navigation {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7) 10%,
+    rgba(0, 0, 0, 0)
+  );
+  position: fixed;
+  width: 100%;
 }
 
 .navbar {
-    flex: 2;
+  flex: 2;
 }
 
 .mobile-navbar {
-    flex: 2;
-    display: none;
+  flex: 2;
+  display: none;
 
-    margin: 0 20px;
-    color: #fff;
-    font-size: 10px;
-} 
+  margin: 0 20px;
+  color: #fff;
+  font-size: 10px;
+}
 
 header .navbar ul {
-    display: flex;
+  display: flex;
 }
 
 header .navbar ul li {
-    margin: 0 10px;
-    color: #fff;
-    font-size: 14px;
+  margin: 0 10px;
+  color: #fff;
+  font-size: 14px;
 }
 
 header .options {
-    flex: 1;
+  flex: 1;
 }
 
 header .options ul {
-    display: flex;
-    align-items: center;
-    margin-left: 64px;
+  display: flex;
+  align-items: center;
+  margin-left: 64px;
 }
 
 header .options ul li {
-    margin: 0 16px;
-    color: #fff;
+  margin: 0 16px;
+  color: #fff;
 }
 
 header .options .profile {
-    margin: 0 !important;
-    width: 30px;
-    border-radius: 3px;
+  margin: 0 !important;
+  width: 30px;
+  border-radius: 3px;
 }
 
 .dropdown {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .dropdown i {
-    margin-left: 8px;
+  margin-left: 8px;
 }
 
-
 .fas {
-    color: white;
+  color: white;
 }
 
 .fa-search {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .fa-gift {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .fa-bell {
-    font-size: 22px;
+  font-size: 22px;
 }
 
-@media (max-width: 576px) {
-    header .navbar {
-        display: none;
-    }
+.fa-play {
+  color: #000;
+}
 
-    .options {
-       margin: 0;
-    }
+.fa-info-circle {
+  color: #fff;
+}
 
-    .options ul li:nth-child(1),
-    .options ul li:nth-child(2) {
-        display: none;
-    }
+.banner-title {
+  margin-top: 16vh;
+}
 
-    header .options ul {
-        margin-left: 0;
-    }
+.banner-title img {
+  width: 30%;
+}
 
-    .options .dropdown .fa-angle-down {
-        display: none;
-    }
+.banner-title figcaption {
+  margin-left: 60px;
+  width: 30%;
+  color: white;
+}
 
-    #app > header {
-        padding: 0 16px;
-    }
-    
-    #app > header img {
-        margin: 0;
-    }
+.banner-btn {
+  margin: 10px 60px;
+}
 
-    .mobile-navbar {
-        display: flex;
-    }
+.btn-watch {
+  background: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.btn-info {
+  background: #5b5c5b;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.btn-info i {
+  margin-right: 8px;
+}
+
+.btn-watch i {
+  margin-right: 8px;
+}
+
+#app main {
+  margin: -148px 60px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+
+#app main section h1 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.catalog-list {
+  display: flex;
+}
+
+.catalog-item {
+  margin: 2px;
+  transition: 0.2s;
+}
+
+.catalog-item:hover {
+    transform: scale(1.4, 1.8);
+}
+
+.catalog-item img {
+  height: 120px;
+  border-radius: 3px;
+}
+
+@media (max-width: 1500px) {
+  #app > header {
+    height: 45vh !important;
+  }
+
+  .navigation {
+    padding-top: 4px;
+    padding-left: 16px;
+  }
+
+  header .navbar {
+    display: none;
+  }
+
+  .options {
+    margin: 0;
+  }
+
+  .options ul li:nth-child(1),
+  .options ul li:nth-child(2) {
+    display: none;
+  }
+
+  header .options ul {
+    margin-left: 0;
+  }
+
+  .options .dropdown .fa-angle-down {
+    display: none;
+  }
+
+  #app > header {
+    padding: 0 16px;
+  }
+
+  #app > header img {
+    margin: 0;
+  }
+
+  .mobile-navbar {
+    display: flex;
+  }
+
+  header .navigation {
+    width: 90% !important;
+  }
+
+  #app header {
+    padding: 0 !important;
+  }
+
+  .banner-title img {
+    width: 80%;
+  }
+
+  .banner-title figcaption {
+    display: none;
+  }
+
+  .banner-title figure {
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner-btn {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .btn-watch,
+  .btn-info {
+    margin-top: 8px;
+    padding: 3px 8px;
+  }
+
+  .banner-title img {
+    width: 70%;
+  }
+  .banner-title figcaption {
+    width: 80%;
+  }
+
+  .catalog {
+    margin-top: 10vh;
+  }
 }

@@ -12,45 +12,101 @@
 <body>
     <div id="app">
         <header>
-            <img src="./layout/img/netflix-logo.png" width="92" alt="netflix logo">
-            <div class="navbar">
-                <ul>
-                    <li class="active">Início</li>
-                    <li>Séries</li>
-                    <li>Filmes</li>
-                    <li>Bombando</li>
-                    <li>Minha lista</li>
-                    <li>Assista de novo</li>
-                </ul>
-            </div>
-            <div class="mobile-navbar">
-                <div class="dropdown">
-                    <span>Navegar</span>
-                    <i class="fas fa-angle-down"></i>
+            <div class="navigation">
+                <img src="./layout/img/netflix-logo.png" width="92" alt="netflix logo">
+                <div class="navbar">
+                    <ul>
+                        <li class="active">Início</li>
+                        <li>Séries</li>
+                        <li>Filmes</li>
+                        <li>Bombando</li>
+                        <li>Minha lista</li>
+                        <li>Assista de novo</li>
+                    </ul>
+                </div>
+                <div class="mobile-navbar">
+                    <div class="dropdown">
+                        <span>Navegar</span>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </div>
+                <div class="options">
+                    <ul>
+                        <li>
+                            <i class="fas fa-search"></i> 
+                        </li>
+                        <li>INFANTIL</li>
+                        <li>
+                            <i class="fas fa-gift"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-bell"></i>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <img src="./layout/img/red-profile.png" class="profile" alt="profile">
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="options">
-                <ul>
-                    <li>
-                        <i class="fas fa-search"></i> 
-                    </li>
-                    <li>INFANTIL</li>
-                    <li>
-                        <i class="fas fa-gift"></i>
-                    </li>
-                    <li>
-                        <i class="fas fa-bell"></i>
-                    </li>
-                    <li>
-                        <div class="dropdown">
-                            <img src="./layout/img/red-profile.png" class="profile" alt="profile">
-                            <i class="fas fa-angle-down"></i>
-                        </div>
-                    </li>
-                </ul>
+            <div class="banner-title"> 
+                <figure>
+                    <img src="./layout/img/catalogs/troia.webp" alt="">
+                    <figcaption>
+                        Mil navios foram lançados ao mar por causa dela. Uma cidade inteira foi arrasada por causa dele.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="banner-btn">
+                <button class="btn-watch">
+                    <i class="fas fa-play"></i>
+                    <span>Assistir</span>
+                </button>
+                <button class="btn-info">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Mais informações</span>
+                </button>
             </div>
         </header>
         <main>
+            <section class="catalog">
+                <h1>Minha Lista</h1>
+                <ul class="catalog-list">
+                    <li class="catalog-item">
+                        <a href="javascript:void(0)">
+                            <img src="./layout/img/catalogs/startrek.jpg" alt="star trek">
+                        </a>
+                    </li>
+                    <li class="catalog-item">
+                        <a href="javascript:void(0)">
+                            <img src="./layout/img/catalogs/spiderman.webp" alt="spider man">
+                        </a>
+                    </li>
+                    <li class="catalog-item">
+                        <a href="javascript:void(0)">
+                            <img src="./layout/img/catalogs/thewitcher.jpg" alt="spider man">
+                        </a>
+                    </li>
+                    <li class="catalog-item">
+                        <a href="javascript:void(0)">
+                            <img src="./layout/img/catalogs/wonderwoman.webp" alt="spider man">
+                        </a>
+                    </li>
+                    <li class="catalog-item">
+                        <a href="javascript:void(0)">
+                            <img src="./layout/img/catalogs/strangerthings.jpg" alt="spider man">
+                        </a>
+                    </li>
+                    </li>
+                    <li class="catalog-item">
+                        <a href="javascript:void(0)">
+                            <img src="./layout/img/catalogs/spiderwick.webp" alt="spider man">
+                        </a>
+                    </li>
+                </ul>
+            </section>
         </main>
     </div>
     <footer>
