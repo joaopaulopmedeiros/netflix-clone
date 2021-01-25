@@ -298,4 +298,8 @@ header .options .profile {
     #app main section h1 {
         text-align: center;
     }
+
+    .catalog-list {
+        justify-content: center;
+    }
 }
