@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #141414;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#app > header {
+    width: 100%;
+    height: 70px;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
+}
+
+#app > header img {
+    margin: 21.5px 60px;
+}
+
+#app main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#app main .profiles-container {
+    width: 90%;
+    max-width: 1000px;
+    margin-top: 12vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+#app main .profiles-container h1 {
+    color: #fff;
+    font-size: 3.5vw;
+    text-align: center;
+    line-height: 1.2em;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.profile-img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+li:hover .profile-img{
+    border: 3.5px solid #fff;
+}
+
+li:hover .profile-name {
+    color: #fff;
+}
+
+.profiles-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.profile-name {
+    line-height: 1.2em;
+    min-height: 1.8em;
+    display: block;
+    text-align: center;
+    font-size: 1.3vw;
+    margin: .6em 0;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
+}
+
+li {
+    margin: 2px;
+    width: 150px;
+    margin: 0 16px;
+}
+
+.outlined-btn {
+    border: 1px solid grey;
+    color: grey;
+    text-transform: uppercase;
+    padding: .5em 1.5em;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin: 40px 0;
+}
+.outlined-btn:hover {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+@media(max-width: 576px) {
+    .profile-name {
+        font-size: 1em;
+    }
+    #app main .profiles-container h1 {
+        font-size: 32px;
+    }
+}
