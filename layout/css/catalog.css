@@ -286,7 +286,16 @@ header .options .profile {
 }
 
 @media (max-width: 576px) {
+
     #app main {
-        margin-top: 10px;
+        margin: 10px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1;
+    }
+
+    #app main section h1 {
+        text-align: center;
     }
 }
