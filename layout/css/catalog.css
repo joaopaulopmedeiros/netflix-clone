@@ -286,7 +286,10 @@ header .options .profile {
 }
 
 @media (max-width: 576px) {
-
+    header .navigation {
+        width: 100%;
+    }
+    
     #app main {
         margin: 10px 0 0;
         display: flex;
