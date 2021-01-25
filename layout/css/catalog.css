@@ -11,6 +11,15 @@ header {
     flex: 2;
 }
 
+.mobile-navbar {
+    flex: 2;
+    display: none;
+
+    margin: 0 20px;
+    color: #fff;
+    font-size: 10px;
+} 
+
 header .navbar ul {
     display: flex;
 }
@@ -69,3 +78,37 @@ header .options .profile {
     font-size: 22px;
 }
 
+@media (max-width: 576px) {
+    header .navbar {
+        display: none;
+    }
+
+    .options {
+       margin: 0;
+    }
+
+    .options ul li:nth-child(1),
+    .options ul li:nth-child(2) {
+        display: none;
+    }
+
+    header .options ul {
+        margin-left: 0;
+    }
+
+    .options .dropdown .fa-angle-down {
+        display: none;
+    }
+
+    #app > header {
+        padding: 0 16px;
+    }
+    
+    #app > header img {
+        margin: 0;
+    }
+
+    .mobile-navbar {
+        display: flex;
+    }
+}
