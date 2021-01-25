@@ -1,0 +1,27 @@
+#app {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#app > header {
+    width: 100%;
+    height: 70px;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
+}
+
+#app > header img {
+    margin: 21.5px 34px 21.5px 60px;
+}
+
+#app main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.active {
+    font-weight: bold;
+}

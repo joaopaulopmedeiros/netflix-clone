@@ -1,0 +1,71 @@
+@import "reboot.css";
+@import "layout.css";
+
+
+header {
+    display: flex; 
+    align-items: center;
+}
+
+.navbar {
+    flex: 2;
+}
+
+header .navbar ul {
+    display: flex;
+}
+
+header .navbar ul li {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 14px;
+}
+
+header .options {
+    flex: 1;
+}
+
+header .options ul {
+    display: flex;
+    align-items: center;
+    margin-left: 64px;
+}
+
+header .options ul li {
+    margin: 0 16px;
+    color: #fff;
+}
+
+header .options .profile {
+    margin: 0 !important;
+    width: 30px;
+    border-radius: 3px;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown i {
+    margin-left: 8px;
+}
+
+
+.fas {
+    color: white;
+}
+
+.fa-search {
+    font-size: 18px;
+}
+
+.fa-gift {
+    font-size: 20px;
+}
+
+.fa-bell {
+    font-size: 22px;
+}
+

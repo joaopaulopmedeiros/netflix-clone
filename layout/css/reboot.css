@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #141414;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
