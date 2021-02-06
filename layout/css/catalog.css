@@ -309,6 +309,10 @@ header .options .profile {
         width: 100% !important;
     }
 
+    #app > header .wrapper img {
+      margin: 0 !important;
+    }
+
     #app main {
         margin: 10px 0 0;
         display: flex;
