@@ -101,6 +101,16 @@ header .options .profile {
 
 .banner-title {
   margin-top: 16vh;
+  margin-bottom: 2vh;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.banner-img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner-title img {
