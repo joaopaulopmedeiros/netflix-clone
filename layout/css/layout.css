@@ -18,6 +18,12 @@
     background-image: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
 }
 
+.defaultHeader {
+    align-items: flex-start !important;
+    padding-top: 3vh;
+    padding-left: 4vw;
+}
+
 #app > header .wrapper {
     display: flex;
     flex-direction: column;
