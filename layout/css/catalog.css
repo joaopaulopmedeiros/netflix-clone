@@ -104,13 +104,31 @@ header .options .profile {
   margin-bottom: 2vh;
   max-width: 1000px;
   width: 100%;
+  align-self: flex-start !important;
 }
 
-.banner-img-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.banner-img-container img {
+  margin: 0 !important;
+}
+
+.banner-btn {
+  margin-top: 20px;
+}
+
+@media(max-width: 768px) {
+  .banner-img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }  
+  .banner-btn {
+    margin: 10px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
 }
 
 .banner-title img {
@@ -118,16 +136,8 @@ header .options .profile {
 }
 
 .banner-title figcaption {
-  margin-left: 5%;
   width: 50%;
   color: white;
-}
-
-.banner-btn {
-  margin: 10px 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .btn-watch {
@@ -282,26 +292,6 @@ header .options .profile {
     justify-content: center;
     align-items: center;
   }
-}
-
-@media (max-width: 1200px) {
-    #app > header {
-        height: 70vh;
-    }
-
-    .banner-title img {
-        width: 40%;
-    }
-
-    .banner-btn {
-        margin: 0 auto;
-        width: 50%;
-        justify-content: center;
-    }
-
-    #app main {
-        margin-top: 50px;
-    }
 }
 
 @media (max-width: 576px) {
